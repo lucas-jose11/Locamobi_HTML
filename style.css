@@ -1,0 +1,80 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Remove decoração de links e herda cor */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove estilo padrão de listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove estilo de botão e input */
+  button, input, select, textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  /* Tira borda ao focar (melhore com :focus-visible depois) */
+  :focus {
+    outline: none;
+  }
+  
+/* */
+
+body {
+    background-color: #ECE8E5;
+}
+
+button {
+  background-color: aqua;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-bottom:1px solid #000;
+}
+
+.da-logo-central {
+    display: flex;
+    flex-direction: column; /* Coloca imagem em cima e texto embaixo */
+    align-items: center;     /* Centraliza horizontalmente */
+}
+
+.logo-central {
+    width: 50px;
+}
+
+main {
+    padding-top: 70px;
+    padding-left: 60px;
+    flex-direction: column;
+}
+
+
+.barras-de-escrever {
+  margin: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
