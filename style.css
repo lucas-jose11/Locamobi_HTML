@@ -46,6 +46,16 @@ button {
   background-color: aqua;
 }
 
+.botao-selecao {
+  width: 450px;
+  background-color: #000;
+  
+}
+
+.botao-selecao button:hover {
+  opacity: 0.8;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -72,9 +82,51 @@ main {
 }
 
 
-.barras-de-escrever {
-  margin: 10px;
-  justify-content: space-between;
+.barras-de-escrita {
+  padding-top: 10px;
+  display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
+.input-escrever {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.grid-carros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+
+
+
+
+footer {
+  border-top: 1px solid #000;
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.absolute {
+  background-color: #ffffff;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+
+}
