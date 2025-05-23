@@ -42,7 +42,7 @@ button, input, select, textarea {
 
 
 /* 
-PARTE DE TESTES/GERAL
+PARTE GERAL/TESTES
 */
 
 body {
@@ -55,11 +55,11 @@ button {
 
 
 /* 
-PARTE DE HEADER
+PARTE DO HEADER
 */
 
 header {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   background-color: #e0e0e0;    /* Cor de fundo parecida com a da imagem */
   display: flex;
   justify-content: space-between; /* Espaça os blocos */
@@ -76,7 +76,6 @@ header {
 
 
 .header-options {
-  font-family: 'Inria Sans', sans-serif;
   font-size: 24;
   font-style: regular;
   display: flex;        /* ← ESSENCIAL para deixar os botões lado a lado */
@@ -100,7 +99,7 @@ header {
 
 
 .header-options button:hover {
-  background-color: rgba(244, 244, 244, 0.8);
+  background-color: rgba(244, 244, 244, 0.445);
   opacity: 0.8;
 }
 
@@ -123,8 +122,6 @@ header {
 
 .logo-locamobi {
   display: flex;
-  flex-direction: column; /* Coloca imagem em cima e texto embaixo */
-  align-items: center;    /* Centraliza horizontalmente */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -136,6 +133,8 @@ header {
 
 
 .user-and-login {
+  font-size: 30;
+  font-style: regular;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -161,34 +160,69 @@ PARTE DA MAIN
 */
 
 main {
-  padding-top: 70px;
+  padding-top: 40px;
   padding-left: 60px;
   flex-direction: column;
 }
 
 
-.barras-de-escrita {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+/* 
+PARTE CONTAINER INPUTS
+*/
+
+.container-inputs {
+  display: flex;  
+  gap: 50px;
+  margin-left: 100px;
 }
 
 
-.input-escrever {
+.text-and-input {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  width: 500px;
+  margin-bottom: 50px;
 }
 
 
-input {
-  justify-content: space-between;
-  flex-direction: row;
-  border-bottom: 5px;
+.text-and-input label {
+  font-family: 'Inria Sans', sans-serif;
+  font-style: bold;
+  font-size: 20;
+}
+
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 8px 10px;
   background-color: #ffffff;
+  width: 100%;
 }
 
 
+.input-bar emoji {
+
+  margin-right: 1px;
+  font-size: 30px;
+  color: #000;
+
+}
+
+
+
+/* 
+PARTE DO CONTAINER GRIDS
+*/
+
+.container-grids-veiculos {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 /* 
 PARTE DO FOOTER
@@ -201,11 +235,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #333;
-}
-
-
-.absolute {
-  background-color: #ffffff;
+  background-color: #ffffff; /*estavam na .absolute*/
   height: 30px;
   width: 100%;
   position: absolute;
