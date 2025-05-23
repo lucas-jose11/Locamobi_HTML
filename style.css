@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
 /* RESET CSS */
 * {
     margin: 0;
@@ -5,36 +8,36 @@
     box-sizing: border-box;
   }
   
-  html, body {
+html, body {
     height: 100%;
     font-family: sans-serif;
     background: #fff;
     color: #000;
-  }
+}
   
-  /* Remove decoração de links e herda cor */
-  a {
+/* Remove decoração de links e herda cor */
+a {
     text-decoration: none;
     color: inherit;
-  }
+}
   
-  /* Remove estilo padrão de listas */
-  ul, ol {
+/* Remove estilo padrão de listas */
+ul, ol {
     list-style: none;
-  }
+}
   
-  /* Remove estilo de botão e input */
-  button, input, select, textarea {
+/* Remove estilo de botão e input */
+button, input, select, textarea {
     font: inherit;
     border: none;
     background: none;
     outline: none;
-  }
+}
   
-  /* Tira borda ao focar (melhore com :focus-visible depois) */
-  :focus {
-    outline: none;
-  }
+/* Tira borda ao focar (melhore com :focus-visible depois) */
+:focus {
+  outline: none;
+}
   
 /* */
 
@@ -46,53 +49,80 @@ button {
   background-color: aqua;
 }
 
-.botao-selecao {
-  width: 450px;
-  background-color: #000;
-  
-}
-
-.botao-selecao button:hover {
-  opacity: 0.8;
-}
 
 header {
-  display: flex;                 /* Layout em linha (horizontal) */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e0e0;    /* Cor de fundo parecida com a da imagem */
+  display: flex;
   justify-content: space-between; /* Espaça os blocos */
   align-items: center;          /* Centraliza verticalmente */
-  padding: 10px 20px;           /* Espaçamento interno */
-  background-color: #e0e0e0;    /* Cor de fundo parecida com a da imagem */
-  font-family: Arial, Helvetica, sans-serif;
+  height: 46px;
+  padding: 0 50px 0 20px;
+  position: relative;
 }
 
-.menu, .header-options, .logo-locamobi, .user-and-login {
-    display: flex;
-    align-items: center;
+.menu-and-options, .logo-locamobi, .user-and-login {
+  margin: 8px;
+}
+
+.header-options {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 24;
+  font-style: regular;
+  display: flex;        /* ← ESSENCIAL para deixar os botões lado a lado */
+  background: none;
+  border: none;
+  font-size: 12px;
+  gap: 1rem;            /* (opcional) espaço entre os botões */
+  height: 100%;
 }
 
 .header-options button {
-      margin-right: 10px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
+  display: flex;
+  align-items: center; 
+  background: none;
+  border: none;
+  padding: 0 12px;
+  height: 100%;
+  cursor: pointer;
+}
 
 .header-options button:hover {
-  background-color: #333;
+  background-color: rgba(244, 244, 244, 0.8);
   opacity: 0.8;
 }
 
-.logo-locamobi {
- display: inline-block;
-justify-content: center;
-align-items: center;
-
+.menu-and-options {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  height: 100%;
 }
 
-    .user-and-login {
-      text-decoration: none;
-      gap: 12px;
-    }
+.menu-and-options button {     
+  margin-right: 1px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-locamobi {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-and-login {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-and-login a:hover {
+  color: blue;
+  text-decoration: underline solid blue;
+}
 
 
 

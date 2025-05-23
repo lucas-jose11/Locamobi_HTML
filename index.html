@@ -4,60 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Locamobi - Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">    
 </head>
     <!--https://www.figma.com/design/S6EYeHQV98IRgryJ7sqzoz/Locamobi-project?node-id=0-1&p=f&t=hUAhUHOuYFtpcs7L-0-->
 <body>
     
     <header>
-        <div class="menu">
-            <button>☰</button>
+        <div class="menu-and-options">
+
+            <div class="menu">
+                <button>☰</button>
+            </div>
+            
+            <div class="header-options">
+                <button>ALUGAR VEÍCULO</button>
+                <button>CADASTRAR VEÍCULO</button>
+            </div>
+            
         </div>
         
-        <div class="header-options">
-            <button>ALUGAR VEÍCULO</button>
-            <button>CADASTRAR VEÍCULO</button>
-        </div>
-
         <div class="logo-locamobi">
             <img class="logo-central" src="./assets/Logo.svg" alt="Locamobi Logo">
         </div>
         
-      <div class="user-and-login">
-            <a href="login.html">Entrar</a>
+        <div class="user-and-login">
+            <a href="">Entrar</a>
             <button>👤</button>
-      </div>
+        </div>
     
     
     </header>
 
 <main>
-    <section>
 
-        <div class="botao-selecao">
-            <button>ALUGAR VEÍCULOS</button>
-            <button>CADASTRAR VEÍCULOS</button>
-            
+    <section class="inputs-part">
+
+        <div class="text-and-input">
+            <label> Local de Retirada</label>
+            <input type= "text" placeholder="Digite aqui...">
         </div>
 
-
-        <div class= "barras-de-escrita">
-            <div class="input-escrever">
-                <label> Local de Retirada</label>
-                <input type= "text" placeholder="Digite aqui...">
-            </div>
-
-            <div class="input-escrever">
-                <label> Data e Local de Partida</label>
-                <input type= "text" placeholder="Digite aqui...">
-            </div>
+        <div class="text-and-input">
+            <label> Data e Local de Partida</label>
+            <input type= "text" placeholder="Digite aqui...">
         </div>
 
     </section>
 
+    <section class="section-grid-veiculos">
+        
+        <div class="grid-economicos">
 
-   
+            <h3>Econômico</h3>
+        
+            <div class="grid-veiculos-economicos"></div>
+
+        </div>
+
+        <div class="grid-intermediario">
+
+            <h3>Intermediário</h3>
+
+            <div class="grid-veiculos-intermediarios"></div>
+
+        </div>
+
+        <div class="grid-motos">
+
+            <h3>Motos</h3>
+
+            <div class="grid-veiculos-motos"></div>
+
+        </div>
+
+
+    </section>
 
 </main>
 
